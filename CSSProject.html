@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width,initial-scale=1">
+
+	<title></title>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding: 0;
+			line-height: 1.5em;
+			   }
+		#header{
+			background: black;
+			font-family: Arial;
+			height: 100px;
+		}
+		/*expand contet according to window browser size*/
+		#contentwrapper{
+			float: left;
+			width:100%;
+		}
+
+		#contentcolumn{
+			margin: 0 230px 0 230px;
+		}
+
+		#leftcolumn{
+			float: left;
+			width: 230px;
+			margin-left: -100%;
+			background: #24C8FF;
+		}
+		#rightcolumn{
+			float: left;
+			width: 230px;
+			margin-left:-230px;
+			background: #FFFB00;
+		}
+		.innertext{
+			margin: :20px;
+			font-family: Arial;
+			color: #5E5E5E
+		}
+		#footer{
+			clear: :left;
+			font-family: Arial;
+			width: 100%;
+			color: #FFF;
+			text-align: center;
+			padding: 4px;
+		}
+
+		/*## NAViGATion BAr*/
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+
+		/*create link which next to oneother*/
+		li{
+			float: left;
+			border-right:1px solid #bbb; 
+		}
+		/* ###last we dont want border so ##*/
+		li:last-child{
+			border-right:none ;
+		}
+		/*navbar content */
+		li a{
+			display: :block;
+			color: white;
+			text-align: center;
+			padding:14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover{
+			background-color: #808080;
+		}
+		.active{
+			 background-color: #0099ff;
+		}
+
+		/*###responsive layout##*/
+		@media (max-width:  840px){
+
+			#leftcolumn {
+				margin-left: -100%;
+				}
+
+			#rightcolumn{
+					float: none;
+					width:100%;
+					margin-left: 0;
+					clear:both;
+					}
+			#contentcolumn{
+						margin-right: 0;
+						}}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<ul style="display: inline;">
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a class="#news" >About</a></li>
+				<li><a class="#content">News</a></li>
+				<li><a class="#about">Contact</a></li>
+			</ul>
+		</div>
+      
+      <div id="contentwrapper">
+      	<div id="contentcolumn">
+      		<div class="innertext">
+      		<b>Welcome</b><br/> 	The term happiness is used in the context of mental or emotional states, including positive or pleasant emotions ranging from contentment to intense joy. It is also used in the context of life satisfaction, subjective well-being, eudaimonia, flourishing and well-being.
+      		</div>
+      	</div>
+      </div>
+
+      <div id="leftcolumn">
+      	<div class="innertext">
+      		Nature is a British weekly scientific journal founded and based in London, England. As a multidisciplinary publication, Nature features peer-reviewed research from a variety of academic disciplines, mainly in science, technology, and the natural sciences.
+      	</div>
+      </div>
+
+      <div id="rightcolumn">
+      	<div class="innertext">
+      		Nature is a British weekly scientific journal founded and based in London, England. As a multidisciplinary publication, Nature features peer-reviewed research from a variety of academic disciplines, mainly in science, technology, and the natural sciences.
+      	</div>
+      </div>
+
+      <div id="footer">Footer</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div class="container" style="background-color:#f1f1f1">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <form action="/save" method="get">
+
+	<label for="firstname">FirstName :</label>
+	<input type="text" name="firstname" placeholder="firstname">
+	<br/><br/>
+
+	<label for="lastname">LastName :</label>
+	<input type="text" name="lastname" placeholder="lastname">
+	<br/><br/>
+
+    Gender:<input type="radio" name="gender" id="male" value="male">
+	<label for="male">Male</label>
+
+	<input type="radio" name="gender" id="female" value="female">
+	<label for="female">Female</label>
+   
+
+    <input type="radio" name="gender" id="other" value="other">
+	<label for="other">Other</label>
+	<br/><br>
+	<label for="birthday"> birthdate</label>
+	<input type="date" name="birthday" value="birthday" id="log" value="birthday"><br/><br>
+   
+   <label for="email">email</label>
+    <input type="text" placeholder="Enter Email" name="email" >
+    <br/><br/>
+
+    <label for="psw">Password</label>
+    <input type="password" placeholder="Enter Password" name="psw" >
+    <br/><br/>
+
+    <label for="psw-repeat">Repeat Password</label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <br/><br/>
+
+</div>
+    
+	
+       <div >
+        <!--  <button type="button" >Cancel</button>
+        <button type="submit">Sign Up</button> -->
+          <input type=button onClick="location.href='Abc.html'" value='Login'>
+
+        </div>
+
+</form>
+
+</body>
+</html>
